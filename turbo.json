@@ -40,17 +40,22 @@
       "cache": false,
       "persistent": true
     },
+    "sort": {
+      "cache": false
+    },
     "ui-add": {
       "cache": false,
       "interactive": true
     }
   },
   "globalEnv": [
-    "POSTGRES_URL",
-    "AUTH_DISCORD_ID",
-    "AUTH_DISCORD_SECRET",
-    "AUTH_REDIRECT_PROXY_URL",
-    "AUTH_SECRET",
+    "CONVEX_DEPLOYMENT",
+    "MEDIA_UPLOAD_URL",
+    "MEDIA_APP_ID",
+    "MEDIA_API_KEY",
+    "NEXT_PUBLIC_MEDIA_URL",
+    "NEXT_PUBLIC_CONVEX_URL",
+    "NEXT_PUBLIC_CONVEX_API_URL",
     "PORT"
   ],
   "globalPassThroughEnv": [

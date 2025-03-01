@@ -11,15 +11,9 @@ function requireEnv() {
     JWKS: z.string().parse(process.env.JWKS, {
       path: ["JWKS"],
     }),
-    JWT_SECRET: z.string().parse(process.env.JWT_SECRET, {
-      path: ["JWT_SECRET"],
+    JWT_PRIVATE_KEY: z.string().parse(process.env.JWT_PRIVATE_KEY, {
+      path: ["JWT_PRIVATE_KEY"],
     }),
-    MEDIA_URL: z
-      .string()
-      .url()
-      .parse(process.env.MEDIA_URL, {
-        path: ["MEDIA_URL"],
-      }),
     PROTOCOL: z.string().parse(process.env.PROTOCOL, {
       path: ["PROTOCOL"],
     }),
