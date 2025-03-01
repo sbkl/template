@@ -1,0 +1,16 @@
+{
+  "extends": "@template/tsconfig/base.json",
+  "compilerOptions": {
+    "lib": ["ES2022", "dom", "dom.iterable"],
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@template/ui/*": ["../../packages/ui/src/*"]
+    },
+    "plugins": [{ "name": "next" }],
+    "module": "esnext"
+  },
+  "include": [".", ".next/types/**/*.ts", "../../tooling/public"],
+  "exclude": ["node_modules"]
+}

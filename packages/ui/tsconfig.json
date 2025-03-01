@@ -1,0 +1,12 @@
+{
+  "extends": "@template/tsconfig/base.json",
+  "compilerOptions": {
+    //"outDir": "dist"
+    "baseUrl": ".",
+    "paths": {
+      "@template/ui/*": ["./src/*"]
+    }
+  },
+  "include": ["."],
+  "exclude": ["node_modules", "dist"]
+}

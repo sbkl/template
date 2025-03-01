@@ -1,0 +1,39 @@
+{
+  "name": "@template/api",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "deploy": "convex deploy",
+    "dev": "pnpm with-env convex dev",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "setup": "convex dev --until-success",
+    "sort": "npx sort-package-json",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false --project convex/tsconfig.json",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "prettier": "@template/prettier-config",
+  "dependencies": {
+    "@auth/core": "0.37.0",
+    "@convex-dev/auth": "catalog:",
+    "@hono/zod-validator": "^0.4.3",
+    "convex": "catalog:",
+    "convex-helpers": "catalog:",
+    "date-fns": "catalog:",
+    "hono": "^4.7.2",
+    "resend": "^4.1.2",
+    "web-push": "^3.6.7",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@template/eslint-config": "workspace:*",
+    "@template/prettier-config": "workspace:*",
+    "@template/tsconfig": "workspace:*",
+    "dotenv-cli": "catalog:",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "typescript": "catalog:"
+  }
+}
